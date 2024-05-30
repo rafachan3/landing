@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chantres Boxing Gym</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#join-section">Join</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="banner" id="banner">
+        <div class="container">
+            <h1>Chantres Boxing Gym</h1>
+            <h2>Unleash Your Inner Warrior: Master Boxing, Muay Thai, and Lethwei with Us!</h2>
+            <a href="#join-section" class="btn-blue">Join now</a>
+        </div>
+        <div class="scroll-down"></div>
+    </div>
+    
+    <div id="classes" class="container">
+        <h2>Combat sports classes offered at our elite gym:</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/boxing.jpeg" alt="Learn Boxing">
+                <h3>Boxing</h3>
+            </div>
+            <div class="card">
+                <img src="images/muaythai.jpeg" alt="Learn Muay Thai">
+                <h3>Muay Thai</h3>
+            </div>
+            <div class="card">
+                <img src="images/lethwei.jpeg" alt="Learn Lethwei">
+                <h3>Lethwei</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class Schedule Section -->
+    <div id="schedule" class="container">
+        <h2>Class Schedule</h2>
+        <table class="schedule-table">
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Class</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Boxing</td>
+                <td>Coach John</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Muay Thai</td>
+                <td>Coach Mike</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Lethwei</td>
+                <td>Coach Sara</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Boxing</td>
+                <td>Coach John</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Muay Thai</td>
+                <td>Coach Mike</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Open Sparring</td>
+                <td>Coach Team</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="container">
+        <h2>Testimonials</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Jane Doe</h3>
+                <p>"Joining Chantres Boxing Gym has transformed my life! The coaches are amazing and the community is incredibly supportive."</p>
+            </div>
+            <div class="card">
+                <h3>Mark Smith</h3>
+                <p>"I have learned so much and gained a lot of confidence since I started training here. Highly recommend this gym to anyone interested in martial arts."</p>
+            </div>
+            <div class="card">
+                <h3>Emily Johnson</h3>
+                <p>"The best gym experience I've ever had. The classes are challenging but fun, and the instructors really care about your progress."</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="join-section" class="container">
+        <!-- Typeform Embed Code -->
+        <div data-tf-live="01HZ4W9FKTSSR23341BB28M5E9" style="width:100%;height:500px;"></div>
+        <script src="https://embed.typeform.com/next/embed.js"></script>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+
+/* Importing component files */
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  background-color: #2F4F4F;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #FFD700;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+nav {
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+/* Schedule Table */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #FFD700;
+  color: #000;
+}
+
+.schedule-table th, .schedule-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #B22222;
+  color: #fff;
+}
+
+/* Testimonials Cards */
+#testimonials .cards .card {
+  background-color: #FFD700;
+  color: #000;
+}
+
+#testimonials .cards .card p {
+  font-style: italic;
+}
